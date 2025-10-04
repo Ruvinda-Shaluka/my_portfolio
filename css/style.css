@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    color: white;
+    /*color: white;*/
 }
 
 footer,
@@ -12,11 +12,10 @@ footer,
 
 .section {
     background-color: black;
-    color: white;
+    /*color: white;*/
 }
 
 .section h1,
-.section h2,
 .section h3,
 .section p,
 .section li {

@@ -1,0 +1,17 @@
+.section-title {
+    font-size: 36px;
+    font-family: monospace;
+    color: #00FF5E;
+    text-align: center;
+    position: relative;
+}
+
+.section-title::before {
+    content: "<title> ";
+    color: #00FF5E;
+}
+
+.section-title::after {
+    content: " </title>";
+    color: #00FF5E;
+}
