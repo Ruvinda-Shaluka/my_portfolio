@@ -1,0 +1,36 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+footer,
+.nav-icons-fixed,
+.nav-icons-fixed * {
+    background-color: initial;
+    color: initial;
+}
+
+.section {
+    background-color: black;
+    color: white;
+}
+
+.section h1,
+.section h2,
+.section h3,
+.section p,
+.section li {
+    color: white;
+}
+
+#contactForm input,
+#contactForm textarea {
+    background-color: #111;
+    color: white;
+    border: 1px solid #444;
+}
+
+#contactForm input::placeholder,
+#contactForm textarea::placeholder {
+    color: #aaa;
+}
