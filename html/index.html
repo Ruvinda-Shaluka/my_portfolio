@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/css/footer.css"/>
     <link rel="stylesheet" href="/css/nav-bar.css"/>
     <link rel="stylesheet" href="/css/section-titles.css"/>
+    <link rel="stylesheet" href="/css/contact-section.css"/>
 </head>
 <body>
 
@@ -120,13 +121,26 @@
 
 <!-- ===== CONTACT ===== -->
 <section id="contact" class="section">
-    <h2 class="section-title">Contact</h2>
-    <form id="contactForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-    </form>
+    <h2 class="section-title" id="contactH2">Contact</h2>
+    <div class="contact-section">
+        <div class="contact-wrapper">
+
+            <div class="freelance-message">
+                <br>
+                Available for select freelance opportunities<br><br>
+                Have an exciting project you need help with?<br>
+                Send me an email or contact me via instant message!<br>
+            </div>
+
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+
 </section>
 
 <!-- ===== FOOTER ===== -->
