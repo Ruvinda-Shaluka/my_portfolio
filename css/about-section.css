@@ -15,8 +15,7 @@
     height: 90vh;
 }
 
-.hero-section,
-.about-section {
+.hero-section, .about-section {
     margin: 0;
     padding: 0;
 }
