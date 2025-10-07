@@ -8,12 +8,23 @@
     font-family: 'Segoe UI', sans-serif;
     color: #00ff99;
     margin: 0;
-    padding: 5px;
+    /*padding: 5px;*/
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
 }
+
+.hero-section,
+.about-section {
+    margin: 0;
+    padding: 0;
+}
+
+#aboutH2 {
+    margin-top: 0;
+}
+
 
 .container {
     width: 100%;

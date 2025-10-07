@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="../my_portfolio/css/nav-bar.css"/>
     <link rel="stylesheet" href="../my_portfolio/css/section-titles.css"/>
     <link rel="stylesheet" href="../my_portfolio/css/contact-section.css"/>
-    <link rel="stylesheet" href="css/about-section.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/about-section.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/hero-section.css"/>
 </head>
 <body>
 <div class="code-bg" id="code-bg"></div>
@@ -48,30 +49,26 @@
 
 <!-- ===== HERO SECTION ===== -->
 <section id="hero" class="section hero">
-    <!--
-    <h1>Hello, I'm <span>Ruvinda Shaluka</span></h1>
-    <p>I'm a passionate Web Developer and Designer.</p>
-    <a href="#contact" class="btn">Get In Touch</a>
-    -->
-    <!--    <div class="about-section">
-            <div class="container">
-                <header class="terminal-header">
-                    <div class="dots">
-                        <span class="red"></span>
-                        <span class="yellow"></span>
-                        <span class="green"></span>
-                    </div>
-                </header>
+    <div class="hero-container">
+        <div class="main-text" id="mainText">Hey Stranger..<span class="cursor"></span></div>
+        <div class="sub-text" id="subText">- byteWithRuvinda -</div>
+        <div class="tagline-container">
+            <div class="tagline" id="tagline">“I craft digital experiences that make life simpler.”</div>
+            <div class="author" id="author">— Ruvinda Shaluka Perera, Software Engineer</div>
+        </div>
 
-                <div class="tabs">
-                    <button class="tab-btn active" data-lang="java">Java</button>
-                    <button class="tab-btn" data-lang="python">Python</button>
-                    <button class="tab-btn" data-lang="js">JavaScript</button>
-                </div>
-
-                <pre class="code-output" id="code-output"></pre>
-            </div>
-        </div>-->
+        <div class="buttons" id="buttons">
+            <a href="#about" class="button">
+                <button class="btn">About Me</button>
+            </a>
+            <a href="#works" class="button">
+                <button class="btn">Projects</button>
+            </a>
+            <a href="#contact" class="button">
+                <button class="btn">Download CV</button>
+            </a>
+        </div>
+    </div>
 </section>
 
 <!-- ===== ABOUT ===== -->
@@ -205,5 +202,6 @@
 </footer>
 
 <script src="../my_portfolio/js/background-lines.js"></script>
+<script src="../my_portfolio/js/hero-section.js"></script>
 </body>
 </html>
