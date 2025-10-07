@@ -33,3 +33,30 @@ footer,
 #contactForm textarea::placeholder {
     color: #aaa;
 }
+/*Background green code lines*/
+.code-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+.code-line {
+    position: absolute;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    color: #00ff41;
+    text-shadow: 0 0 5px #00ff41, 0 0 10px #00ff41;
+    white-space: nowrap;
+    opacity: 0.75;
+    animation: floatCode linear infinite;
+}
+@keyframes floatCode {
+    0% { left: -100%; opacity: 0.2; }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { left: 100%; opacity: 0.2; }
+}

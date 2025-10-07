@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="../my_portfolio/css/nav-bar.css"/>
     <link rel="stylesheet" href="../my_portfolio/css/section-titles.css"/>
     <link rel="stylesheet" href="../my_portfolio/css/contact-section.css"/>
+    <link rel="stylesheet" href="css/about-section.css"/>
 </head>
 <body>
+<div class="code-bg" id="code-bg"></div>
 
 <!-- ===== SIDE NAVIGATION ===== -->
 <div class="nav-icons-fixed">
@@ -46,15 +48,54 @@
 
 <!-- ===== HERO SECTION ===== -->
 <section id="hero" class="section hero">
+    <!--
     <h1>Hello, I'm <span>Ruvinda Shaluka</span></h1>
     <p>I'm a passionate Web Developer and Designer.</p>
     <a href="#contact" class="btn">Get In Touch</a>
+    -->
+    <!--    <div class="about-section">
+            <div class="container">
+                <header class="terminal-header">
+                    <div class="dots">
+                        <span class="red"></span>
+                        <span class="yellow"></span>
+                        <span class="green"></span>
+                    </div>
+                </header>
+
+                <div class="tabs">
+                    <button class="tab-btn active" data-lang="java">Java</button>
+                    <button class="tab-btn" data-lang="python">Python</button>
+                    <button class="tab-btn" data-lang="js">JavaScript</button>
+                </div>
+
+                <pre class="code-output" id="code-output"></pre>
+            </div>
+        </div>-->
 </section>
 
 <!-- ===== ABOUT ===== -->
 <section id="about" class="section">
-    <h2 class="section-title">Who am I?</h2>
-    <p>I’m a creative, curious, and detail-oriented developer focused on delivering impactful digital experiences.</p>
+    <h2 class="section-title" id="aboutH2">Who am I?</h2>
+    <div class="about-section">
+        <div class="container">
+            <header class="terminal-header">
+                <div class="dots">
+                    <span class="red"></span>
+                    <span class="yellow"></span>
+                    <span class="green"></span>
+                </div>
+            </header>
+
+            <div class="tabs">
+                <button class="tab-btn active" data-lang="java">Java</button>
+                <button class="tab-btn" data-lang="python">Python</button>
+                <button class="tab-btn" data-lang="js">JavaScript</button>
+            </div>
+
+            <pre class="code-output" id="code-output"></pre>
+        </div>
+    </div>
 </section>
 
 <!-- ===== WORKS ===== -->
@@ -163,5 +204,6 @@
     <p>© 2025 Ruvinda Shaluka | All rights reserved</p>
 </footer>
 
+<script src="../my_portfolio/js/background-lines.js"></script>
 </body>
 </html>

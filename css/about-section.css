@@ -1,0 +1,110 @@
+#aboutH2 {
+    background-color: rgba(18, 18, 18, 0.5);
+    margin-bottom: 0;
+}
+
+.about-section{
+    background-color: rgba(18, 18, 18, 0.5);
+    font-family: 'Segoe UI', sans-serif;
+    color: #00ff99;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    background-color: rgba(26, 26, 26, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    margin: auto;
+    z-index: 10;
+    position: relative;
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(46, 46, 46, 0.5);
+    padding: 15px;
+    gap: 10px;
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+    margin-right: 10px;
+}
+
+.dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+/* Tabs */
+.tabs {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: rgba(37, 37, 37, 0.5);
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    padding: 8px 16px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    border-bottom: 3px solid #79b6f2;
+    color: #79b6f2;
+}
+
+.code-output {
+    background-color: #111;
+    color: #f8f8f8;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    overflow-x: auto;
+    height: 400px;
+    overflow-y: auto;
+    border-bottom: 1px solid #333;
+}
+
+.code-output .keyword { color: #cc99cd; }
+.code-output .string { color: #109868; }
+.code-output .comment { color: #666; font-style: italic; }
+.code-output .function { color: #79b6f2; }
+.code-output .var { color: #ffd700; }
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background-color: #fff;
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
