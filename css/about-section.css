@@ -8,10 +8,12 @@
     font-family: 'Segoe UI', sans-serif;
     color: #00ff99;
     margin: 0;
-    /*padding: 5px;*/
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     height: 90vh;
 }
 
@@ -24,6 +26,35 @@
     margin-top: 0;
 }
 
+.about-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-pic {
+    margin-top: 1rem;
+    border: 2px solid #00ff88;
+    width: 80%;
+    max-width: 200px;
+    border-radius: 25%;
+    margin-bottom: 1rem;
+    scale: 0.8;
+    transition:all 1s ease;
+}
+.profile-pic:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);}
+
+.about-desc {
+    text-align: left;
+    font-family: 'Courier New', monospace;
+    font-size: 1.1rem;
+    color: #00ff88 !important;
+    margin-right: 25px;
+    z-index: 1000;
+}
 
 .container {
     width: 100%;
@@ -35,6 +66,14 @@
     margin: auto;
     z-index: 10;
     position: relative;
+    scale: 0.8;
+    transition: all 0.3s ease;
+}
+
+.container:hover {
+    background-color: rgba(26, 26, 26, 0.7);
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
 }
 
 .terminal-header {
@@ -117,4 +156,10 @@
 @keyframes blink {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+}
+
+@media all and (max-width: 480px) {
+    .container {
+        scale: 1;
+    }
 }

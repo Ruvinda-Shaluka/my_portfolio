@@ -96,7 +96,7 @@
     height: 45px;
     background-color: #00ff88;
     margin-left: 5px;
-    animation: blink 2s infinite;
+    animation: blink 2s step-end infinite;
 }
 
 @keyframes blink {
