@@ -1,0 +1,297 @@
+.work-section {
+    --card-width: 500px;
+    --card-height: 650px;
+    --highlight-color: #00ff80;
+    --text-color: #00ff80;
+    --bg-dark: rgba(18, 18, 18, 0.5);
+
+    background-color: var(--bg-dark);
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 4rem 3rem;
+    box-sizing: border-box;
+}
+
+.work-section .work-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    max-width: 1400px;
+    gap: 2rem;
+}
+
+.work-section .work-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.work-section .work-text {
+    max-width: 450px;
+    padding-right: 1rem;
+}
+
+.work-section .section-title {
+    font-size: 2rem;
+    color: var(--highlight-color);
+    font-weight: bold;
+}
+
+.work-section .work-subtitle {
+    font-size: 1.3rem;
+    color: #888;
+    margin-bottom: 1rem;
+}
+
+/* cards column */
+.work-section .work-cards-container {
+    width: 100%;
+    max-width: 700px;
+    height: var(--card-height);
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.work-section .work-cards-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* project card */
+.work-section .project-card {
+    position: relative;
+    width: var(--card-width);
+    height: 560px;
+    border-radius: 14px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff30;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    margin: 1.5rem 0;
+}
+
+.work-section .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.12);
+}
+
+/* background image */
+.work-section .project-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.6s ease;
+}
+
+/* back content (initially hidden by rotateX) */
+.work-section .project-card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: rgba(18,18,18,0.95);
+    color: var(--text-color);
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* center content vertically */
+    align-items: center;     /* center content horizontally */
+    gap: 1rem;
+    text-align: center;
+    pointer-events: none;    /* avoid accidental clicks when hidden */
+}
+
+.work-section .project-card:hover .project-card-content {
+    transform: rotateX(0deg);
+    pointer-events: auto; /* allow interaction when visible */
+}
+
+/* hide background image when backside visible */
+.work-section .project-card:hover .project-card-img {
+    opacity: 0;
+}
+
+/* title & description */
+.work-section .project-card-title {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--highlight-color);
+    font-weight: 700;
+}
+
+.work-section .project-card-description {
+    max-width: 80%;
+    margin: 0.5rem 0 1rem 0;
+    font-size: 0.95rem;
+    color: #bdbdbd;
+    line-height: 1.4;
+}
+
+/* project-card-buttons container — centers the button */
+.work-section .project-card-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* -------------------------------
+   Button (Uiverse 3D cube) styles
+   Namespaced under .work-section to avoid collisions
+   ------------------------------- */
+
+/* wrapper */
+.work-section .button-icon {
+    position: relative; /* for absolute children (.side) */
+    display: flex;
+    border: 3px solid #ffffff;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    background: transparent;
+    perspective: 600px;
+    transform-style: preserve-3d;
+    border-radius: 6px;
+    overflow: visible;
+}
+
+/* icon part */
+.work-section .button-icon .icon {
+    background-color: #ffffff;
+    padding: 10px 10px 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px 0 0 4px;
+}
+
+.work-section .button-icon .icon svg {
+    width: 25px;
+    height: 25px;
+    display: block;
+}
+
+/* cube area */
+.work-section .button-icon .cube {
+    transition: all 0.4s;
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 47px;
+    position: relative;
+    display: block;
+    margin-left: -4px; /* tuck under the icon border a bit */
+}
+
+/* rotate cube on parent hover */
+.work-section .project-card:hover .button-icon .cube {
+    transform: rotateX(90deg);
+}
+
+/* sides */
+.work-section .button-icon .side {
+    position: absolute;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    font-size: 0.9em;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    border-radius: 0 4px 4px 0;
+    backface-visibility: hidden;
+}
+
+/* top (visible after rotation) */
+.work-section .button-icon .top {
+    background: #222229;
+    color: #fff;
+    transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
+}
+
+/* front (initial face) */
+.work-section .button-icon .front {
+    background: #222229;
+    color: #fff;
+    transform: translate3d(0, 0, 1em);
+}
+
+/* hover effect on the entire button */
+.work-section .button-icon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+/* make button keyboard-accessible focus style */
+.work-section .button-icon:focus {
+    outline: 3px solid rgba(0,255,128,0.25);
+    outline-offset: 3px;
+}
+
+/* small adjustments for smaller screens */
+@media (max-width: 1024px) {
+    .work-section .work-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .work-section .work-info {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .work-section .project-card {
+        width: 90%;
+        height: 500px;
+    }
+
+    .work-section .button-icon .cube {
+        width: 160px;
+    }
+
+    .work-section .button-icon .side,
+    .work-section .button-icon .front,
+    .work-section .button-icon .top {
+        width: 160px;
+    }
+}
+
+@media (max-width: 480px) {
+    .work-section .project-card {
+        width: 90%;
+        height: 400px;
+    }
+
+    .work-section .button-icon .cube {
+        width: 140px;
+    }
+
+    .work-section .button-icon .side,
+    .work-section .button-icon .front,
+    .work-section .button-icon .top {
+        width: 140px;
+        font-size: 0.8rem;
+        height: 42px;
+    }
+}

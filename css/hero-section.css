@@ -1,5 +1,5 @@
 .hero-container {
-    background-color: #0a0a0a;
+    background-color: rgba(18, 18, 18, 0.5);
     color: #00ff88;
     font-family: 'JetBrains Mono', monospace;
     display: flex;
