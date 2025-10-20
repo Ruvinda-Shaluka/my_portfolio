@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../my_portfolio/css/hero-section.css"/>
     <link rel="stylesheet" href="../my_portfolio/css/works-section.css"/>
     <link rel="stylesheet" href="../my_portfolio/css/education-section.css"/>
+    <!--    <link rel="stylesheet" href="../my_portfolio/css/contact-section.css"/>-->
 </head>
 <body>
 <div class="code-bg" id="code-bg"></div>
@@ -380,27 +381,54 @@
 </section>
 
 <!-- ===== CONTACT ===== -->
-<section id="contact" class="section">
-    <h2 class="section-title" id="contactH2">Contact</h2>
+<section id="contact" class="section-contact">
+    <h2 class="section-title">Contact</h2>
     <div class="contact-section">
         <div class="contact-wrapper">
 
-            <div class="freelance-message">
+            <div class="contact-freelance-message">
                 <br>
                 Available for select freelance opportunities<br><br>
                 Have an exciting project you need help with?<br>
-                Email me or contact me via instant message!<br>
+                Email me or contact me via instant message!<br><br>
+                Let's create something amazing together.<br>
+                I specialize in modern web solutions and<br>
+                innovative digital experiences.
             </div>
 
-            <form class="contact-form">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
+            <div class="contact-form-container">
+                <form class="contact-form" id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required class="contact-input" id="contact-name">
+                    <input type="email" name="email" placeholder="Your Email" required class="contact-input" id="contact-email">
+                    <textarea name="message" placeholder="Your Message" required class="contact-textarea" id="contact-message"></textarea>
+
+                    <div class="contact-file-section">
+                        <label for="contact-file" class="contact-file-btn">
+                            <svg class="contact-file-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                            Attach Document
+                        </label>
+                        <input type="file" id="contact-file" class="contact-file-input">
+                        <div class="contact-file-name" id="contact-file-name">No file selected</div>
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn">Send Email</button>
+
+                    <div class="contact-message contact-success" id="contact-success-message">
+                        ✓ Message prepared! Your email client should open automatically.
+                    </div>
+                    <div class="contact-message contact-error" id="contact-error-message">
+                        ✗ Error preparing email. Please try again.
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
-
 </section>
 
 <!-- ===== FOOTER ===== -->
@@ -426,5 +454,6 @@
 <script src="../my_portfolio/js/background-lines.js"></script>
 <script src="../my_portfolio/js/hero-section.js"></script>
 <script src="../my_portfolio/js/education-section.js"></script>
+<script src="../my_portfolio/js/contact-section.js"></script>
 </body>
 </html>
