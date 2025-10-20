@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../my_portfolio/css/about-section.css"/>
     <link rel="stylesheet" href="../my_portfolio/css/hero-section.css"/>
     <link rel="stylesheet" href="../my_portfolio/css/works-section.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/education-section.css"/>
 </head>
 <body>
 <div class="code-bg" id="code-bg"></div>
@@ -31,7 +32,7 @@
     <a href="#education" class="nav-icon" data-label="Education">
         <img src="../my_portfolio/assets/icons/educationBtn.png" alt="Education">
     </a>
-    <a href="#skills" class="nav-icon" data-label="Services & Skills">
+    <a href="#services" class="nav-icon" data-label="Services & Skills">
         <img src="../my_portfolio/assets/icons/skillsBtn.png" alt="Skills">
     </a>
     <!--
@@ -53,7 +54,7 @@
 <!-- ===== HERO SECTION ===== -->
 <section id="hero" class="section hero">
     <div class="hero-container">
-        <div class="main-text" id="mainText">Hey World!..<span class="cursor"></span></div>
+        <div class="main-text" id="mainText">Hello World!..<span class="cursor"></span></div>
         <div class="sub-text" id="subText">- byteWithRuvinda -</div>
         <div class="tagline-container">
             <div class="tagline" id="tagline">“I craft digital experiences that make life simpler.”</div>
@@ -117,7 +118,6 @@
 </section>
 
 <!-- ======== Works ========== -->
-
 <section class="work-section" id="work-section">
     <div class="work-container">
         <!-- LEFT COLUMN -->
@@ -274,15 +274,69 @@
     </div>
 </section>
 
-
-
 <!-- ===== EDUCATION ===== -->
-<section id="education" class="section">
-    <h2 class="section-title">Education</h2>
-    <ul>
-        <li><strong>University of Somewhere</strong> — BSc in Computer Science (2021–2025)</li>
-    </ul>
+<section id="education" class="education-section">
+    <h1 class="section-title">Education</h1>
+    <div class="education-container">
+        <div class="education-item">
+            <div class="education-degree-info">
+                <h3 class="education-degree-title">BSc in Software Engineering</h3>
+                <p class="education-institution">Institute of Software Engineering (IJSE)</p>
+                <p class="education-duration">2024 - 2027(Expected)</p>
+            </div>
+            <div class="education-degree-description">
+                <p>Currently pursuing a Bachelor's degree in Software Engineering with a focus on modern software development practices, algorithms, data structures, and system design.</p>
+                <p><strong>Key Courses:</strong> Object-Oriented Programming, Data Structures & Algorithms, Database Systems, Web Development, Software Engineering Principles</p>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <h3 class="education-certificates-title">Certificates</h3>
+            <div class="education-certificates-container">
+                <div class="education-certificate-display" id="education-certificate-display">
+                    <div>
+                        <div class="education-certificate-card" id="education-certificate-card">
+                            Java
+                        </div>
+                        <h4 class="education-certificate-title" id="education-certificate-title">Java Programming Masterclass</h4>
+                        <p class="education-certificate-issuer" id="education-certificate-issuer">Issued by: Udemy</p>
+                        <p class="education-certificate-description" id="education-certificate-description">
+                            Comprehensive Java programming course covering fundamentals to advanced topics including OOP, data structures, multithreading, and JavaFX. Completed with hands-on projects and exercises.
+                        </p>
+                        <a href="https://www.hackerrank.com/certificates/a9c9767ef028" class="certificate-link" id="certificate-link" target="_blank">View Full Certificate</a>
+                    </div>
+                    <div>
+                        <div class="education-certificate-counter" id="education-certificate-counter">1 of 5</div>
+                        <div class="education-certificate-nav">
+                            <button class="education-nav-btn" id="education-prev-btn" disabled>
+                                <svg class="education-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                                </svg>
+                                Previous
+                            </button>
+                            <button class="education-nav-btn" id="education-next-btn">
+                                Next
+                                <svg class="education-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+
+<!-- Certificate Preview Overlay -->
+<div class="certificate-preview-overlay" id="certificate-preview-overlay">
+    <div class="certificate-preview-container">
+        <button class="certificate-preview-close" id="certificate-preview-close">×</button>
+        <h3 class="certificate-preview-title" id="certificate-preview-title">Certificate Preview</h3>
+        <iframe class="certificate-preview-iframe" id="certificate-preview-iframe" src=""></iframe>
+    </div>
+</div>
+
 <!--
 
  ===== SKILLS =====
@@ -371,5 +425,6 @@
 
 <script src="../my_portfolio/js/background-lines.js"></script>
 <script src="../my_portfolio/js/hero-section.js"></script>
+<script src="../my_portfolio/js/education-section.js"></script>
 </body>
 </html>
