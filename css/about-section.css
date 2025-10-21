@@ -18,9 +18,291 @@
     padding: 2rem 1rem;
 }
 
-/* ===== CARD CONTAINER ===== */
+/* New container for 1:3 ratio */
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 40px;
+    max-width: 1400px;
+    width: 100%;
+    align-items: start;
+}
+
+.about-left-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-right-column {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* ===== GITHUB PROFILE CARD STYLES ===== */
+.about-git-glitch-profile-wrapper {
+    --bg-color: #0d0d0d;
+    --primary-color: #00ff88; /* Changed from blue to green */
+    --secondary-color: #00cc66; /* Changed from purple to green shade */
+    --text-color: #e5e5e5;
+    --font-family: "Fira Code", Consolas, "Courier New", Courier, monospace;
+    --glitch-anim-duration: 0.4s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    padding: 1rem;
+    width: 100%;
+}
+
+.about-git-glitch-card {
+    position: relative;
+    background-color: var(--bg-color);
+    width: 19rem;
+    height: 380px;
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 255, 136, 0.2);
+    box-shadow:
+            0 0 1.5rem rgba(0, 255, 136, 0.1),
+            inset 0 0 1rem rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-git-card-header-visual {
+    height: 4rem;
+    background: linear-gradient(
+            45deg,
+            rgba(0, 255, 136, 0.1), /* Changed to green */
+            rgba(13, 13, 13, 0.8)
+    ),
+    radial-gradient(circle, rgba(0, 204, 102, 0.05) 0%, transparent 70%); /* Changed to green */
+    border-bottom: 1px solid rgba(0, 255, 136, 0.1); /* Changed to green */
+}
+
+.about-git-profile-avatar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0.75rem;
+    z-index: 2;
+    width: 5.5rem;
+    height: 5.5rem;
+    background: var(--bg-color);
+    border-radius: 50%;
+    padding: 0.9rem;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(0, 255, 136, 0.3); /* Changed to green */
+    transition: background-color 0.5s ease-in-out;
+}
+
+.about-git-octocat-svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--primary-color); /* Now green */
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    filter: drop-shadow(0 0 10px rgba(0, 255, 136, 0.3)); /* Changed to green */
+}
+
+.about-git-profile-avatar:hover {
+    background-color: var(--primary-color); /* Green */
+}
+.about-git-profile-avatar:hover .about-git-octocat-svg {
+    fill: var(--bg-color);
+    transform: scale(1.1) rotate(-5deg);
+}
+
+.about-git-card-body {
+    padding: 1.1rem;
+    padding-top: 0;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.about-git-profile-body {
+    align-items: center;
+    text-align: center;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /*margin-top: 5rem;*/
+}
+
+.about-git-profile-info {
+    margin-bottom: 1.5rem;
+}
+.about-git-profile-name {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+    position: relative;
+    cursor: pointer;
+}
+.about-git-profile-title {
+    font-size: 0.75rem;
+    color: var(--primary-color); /* Green */
+    opacity: 0.8;
+    margin: 0.25rem 0 0 0;
+    letter-spacing: 0.1em;
+}
+
+.about-git-profile-stats {
+    width: 100%;
+    margin-top: inherit;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 255, 136, 0.2); /* Changed to green */
+    display: flex;
+    justify-content: space-around;
+}
+.about-git-stat-item {
+    text-align: center;
+    cursor: pointer;
+}
+.about-git-stat-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: var(--text-color);
+    opacity: 0.6;
+    letter-spacing: 0.1em;
+}
+.about-git-stat-value {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-color); /* Green */
+    margin-top: 0.25rem;
+    position: relative;
+}
+
+.about-git-submit-btn {
+    display: block;
+    width: 90%;
+    /*margin-right: 5px;
+    margin-left: 5px;*/
+    margin-top: 1.1rem;
+    padding: 0.7em 1em;
+    background-color: transparent;
+    border: 2px solid var(--primary-color); /* Green */
+    color: var(--primary-color); /* Green */
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s;
+    overflow: hidden;
+    text-align: center;
+    text-decoration: none;
+}
+
+.about-git-submit-btn:hover,
+.about-git-submit-btn:focus {
+    background-color: var(--primary-color); /* Green */
+    color: var(--bg-color);
+    box-shadow: 0 0 1.5rem var(--primary-color); /* Green */
+    outline: none;
+}
+
+.about-git-submit-btn:active {
+    transform: scale(0.97);
+}
+.about-git-submit-btn .about-git-btn-text {
+    position: relative;
+    z-index: 1;
+    transition: opacity 0.2s ease;
+}
+
+/* Glitch Effects */
+.about-git-profile-name:hover::before,
+.about-git-profile-name:hover::after,
+.about-git-stat-value:hover::before,
+.about-git-stat-value:hover::after,
+.about-git-submit-btn:hover::before,
+.about-git-submit-btn:hover::after,
+.about-git-submit-btn:focus::before,
+.about-git-submit-btn:focus::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-git-profile-name:hover,
+.about-git-stat-item:hover .about-git-stat-value {
+    color: transparent;
+}
+.about-git-submit-btn:hover .about-git-btn-text {
+    opacity: 0;
+}
+.about-git-profile-name:hover::before,
+.about-git-stat-value:hover::before,
+.about-git-submit-btn:hover::before,
+.about-git-submit-btn:focus::before {
+    opacity: 1;
+    color: var(--secondary-color); /* Green shade */
+    animation: about-git-glitch-anim var(--glitch-anim-duration)
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.about-git-profile-name:hover::after,
+.about-git-stat-value:hover::after {
+    background-color: var(--bg-color);
+    color: var(--primary-color); /* Green */
+    animation: about-git-glitch-anim var(--glitch-anim-duration)
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+}
+
+.about-git-submit-btn:hover::after,
+.about-git-submit-btn:focus::after {
+    color: var(--bg-color);
+    animation: about-git-glitch-anim var(--glitch-anim-duration)
+    cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both;
+}
+
+@keyframes about-git-glitch-anim {
+    0% {
+        transform: translate(0);
+        clip-path: inset(0 0 0 0);
+    }
+    20% {
+        transform: translate(-0.3rem, 0.15rem);
+        clip-path: inset(50% 0 20% 0);
+    }
+    40% {
+        transform: translate(0.15rem, -0.1rem);
+        clip-path: inset(20% 0 60% 0);
+    }
+    60% {
+        transform: translate(-0.25rem, 0.1rem);
+        clip-path: inset(80% 0 5% 0);
+    }
+    80% {
+        transform: translate(0.25rem, -0.15rem);
+        clip-path: inset(30% 0 45% 0);
+    }
+    100% {
+        transform: translate(0);
+        clip-path: inset(0 0 0 0);
+    }
+}
+
+/* ===== EXISTING ABOUT CARD STYLES (No changes) ===== */
 .about-card {
-    width: 1000px;
+    width: 100%;
     height: 600px;
     perspective: 1000px;
     display: flex;
@@ -43,7 +325,6 @@
     transform: rotateY(180deg);
 }
 
-/* ===== FRONT & BACK COMMON STYLES ===== */
 .about-card-front,
 .about-card-back {
     position: absolute;
@@ -57,21 +338,19 @@
     align-items: center;
     box-sizing: border-box;
     background: rgba(30, 30, 30, 1);
+    /*margin-right: 100px;*/
 }
 
-/* ===== FRONT SIDE (Image Left + Text Right) ===== */
 .about-card-front {
-    /*background-color: #6A2C70;*/
-    /*border: 10px solid #6A2C70;*/
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
     color: #fff;
+    margin-right: 50px;
 }
 
-/* Left side (Image) */
 .about-image {
     flex: 1;
     display: flex;
@@ -92,7 +371,6 @@
     transform: scale(1.1);
 }
 
-/* Right side (Text) */
 .about-text {
     flex: 1;
     padding: 1rem 2rem;
@@ -110,15 +388,11 @@
     text-align: left;
 }
 
-/* ===== BACK SIDE ===== */
 .about-card-back {
-    /*background-color: #F08A5D;*/
-    /*border: 10px solid #F08A5D;*/
     transform: rotateY(180deg);
     padding: 2rem;
 }
 
-/* ===== CODE TERMINAL AREA ===== */
 .about-left {
     display: flex;
     flex-direction: column;
@@ -139,7 +413,6 @@
     transform: scale(1.05);
 }
 
-/* Terminal Header */
 .terminal-header {
     display: flex;
     justify-content: center;
@@ -166,7 +439,6 @@
 .yellow { background-color: #ffbd2e; }
 .green { background-color: #27c93f; }
 
-/* Tabs */
 .tabs {
     display: flex;
     justify-content: center;
@@ -190,7 +462,6 @@
     color: #79b6f2;
 }
 
-/* Code Output Box */
 .code-output {
     background-color: #111;
     color: #f8f8f8;
@@ -227,6 +498,11 @@
 
 /* Tablets (max width: 1024px) */
 @media (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
     .about-card {
         width: 90%;
         height: 500px;
@@ -302,5 +578,9 @@
 
     .about-card {
         height: auto;
+    }
+
+    .about-git-glitch-card {
+        width: 16rem;
     }
 }
