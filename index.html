@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../my_portfolio/css/hero-section.css"/>
     <link rel="stylesheet" href="../my_portfolio/css/works-section.css"/>
     <link rel="stylesheet" href="../my_portfolio/css/education-section.css"/>
-    <!--    <link rel="stylesheet" href="../my_portfolio/css/contact-section.css"/>-->
+    <link rel="stylesheet" href="../my_portfolio/css/service-section.css"/>
 </head>
 <body>
 <div class="code-bg" id="code-bg"></div>
@@ -80,9 +80,9 @@
 <section id="about" class="section">
     <h2 class="section-title" id="aboutH2">Who am I?</h2>
     <div class="about-section">
-        <div class="card">
-            <div class="card-inner">
-                <div class="card-front">
+        <div class="about-card">
+            <div class="about-card-inner">
+                <div class="about-card-front">
                     <div class="about-image">
                         <img src="../my_portfolio/assets/images/my-profile-picture.jpg" alt="Profile Picture" class="profile-pic">
                     </div>
@@ -94,7 +94,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="card-back">
+                <div class="about-card-back">
                     <div class="about-left">
                         <div class="container">
                             <header class="terminal-header">
@@ -361,12 +361,327 @@
 -->
 
 <!-- ===== SERVICES ===== -->
-<section id="services" class="section">
+<section id="services" class="service-section">
     <h2 class="section-title">Services</h2>
-    <div class="service-list">
-        <div class="service">
-            <h3>Web Development</h3>
-            <p>I build responsive, user-friendly websites using modern web technologies.</p>
+    <div class="services-container">
+        <!-- Left Column - Services Cards -->
+        <div class="services-left">
+            <div class="service-gallery">
+                <div class="service-slider">
+                    <div class="service-wrapper">
+                        <div class="service-slide" data-service="1">
+                            <div class="service-card">
+                                <label for="service-flipper-1">
+                                    <div class="service-card-inner">
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-side service-front">
+                                            <span class="service-h1">Stand Alone Applications</span>
+                                            <p>
+                                                Development of desktop applications using Java, Python, and modern frameworks. Custom solutions tailored to your business needs.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">💻</div>
+                                        </div>
+                                        <div class="service-side service-back">
+                                            <span class="service-h1">Desktop Solutions</span>
+                                            <p>
+                                                Robust architecture, seamless performance, and scalable desktop applications built with cutting-edge technologies for optimal user experience.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">🚀</div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="service-flipper-1" />
+                            </div>
+                        </div>
+                        <div class="service-slide" data-service="2">
+                            <div class="service-card">
+                                <label for="service-flipper-2">
+                                    <div class="service-card-inner">
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-side service-front">
+                                            <span class="service-h1">Web Development</span>
+                                            <p>
+                                                Full-stack web development with modern technologies. Responsive designs, REST APIs, and deployment solutions.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">🌐</div>
+                                        </div>
+                                        <div class="service-side service-back">
+                                            <span class="service-h1">Full Stack</span>
+                                            <p>
+                                                Complete web solutions from frontend to backend. Database integration, API development, and cloud deployment for optimal performance.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">⚡</div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="service-flipper-2" />
+                            </div>
+                        </div>
+                        <div class="service-slide" data-service="3">
+                            <div class="service-card">
+                                <label for="service-flipper-3">
+                                    <div class="service-card-inner">
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-side service-front">
+                                            <span class="service-h1">UI/UX Design</span>
+                                            <p>
+                                                User-centered design approach creating intuitive interfaces. Wireframing, prototyping, and visual design.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">🎨</div>
+                                        </div>
+                                        <div class="service-side service-back">
+                                            <span class="service-h1">User Experience</span>
+                                            <p>
+                                                Creating engaging digital experiences through research, testing, and iterative design. Focus on usability and aesthetic appeal.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">✨</div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="service-flipper-3" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column - Skills Cards -->
+        <div class="skills-right">
+            <div class="skill-gallery">
+                <div class="skill-grid-container">
+                    <div class="skill-grid">
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" class="skill-image">
+                                    <div class="skill-name">Java</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="skill-image">
+                                    <div class="skill-name">Python</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="skill-image">
+                                    <div class="skill-name">JavaScript</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL" class="skill-image">
+                                    <div class="skill-name">MySQL</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" class="skill-image">
+                                    <div class="skill-name">HTML</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="skill-image">
+                                    <div class="skill-name">CSS</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="skill-image">
+                                    <div class="skill-name">Figma</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://hibernate.org/images/hibernate-logo.svg" alt="Hibernate" class="skill-image">
+                                    <div class="skill-name">Hibernate</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" class="skill-image">
+                                    <div class="skill-name">Git</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -459,5 +774,6 @@
 <script src="../my_portfolio/js/hero-section.js"></script>
 <script src="../my_portfolio/js/education-section.js"></script>
 <script src="../my_portfolio/js/contact-section.js"></script>
+<script src="../my_portfolio/js/service-section.js"></script>
 </body>
 </html>
