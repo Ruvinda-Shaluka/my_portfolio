@@ -8,6 +8,7 @@
     const contactFileBtn = document.querySelector('.contact-file-btn');
     const contactSuccessMessage = document.getElementById('contact-success-message');
     const contactErrorMessage = document.getElementById('contact-error-message');
+    const attachmentInstruction = document.getElementById('attachment-instruction');
 
     // Focus effect for form fields
     const formFields = [contactName, contactEmail, contactMessage];
@@ -37,10 +38,16 @@
     contactFileName.textContent = `Selected: ${file.name} (${(file.size / 1024).toFixed(2)} KB)`;
     contactFileBtn.style.borderColor = '#00cc77';
     contactFileBtn.style.backgroundColor = 'rgba(0, 255, 153, 0.1)';
+
+    // Show attachment instruction
+    attachmentInstruction.style.display = 'block';
 } else {
     contactFileName.textContent = 'No file selected';
     contactFileBtn.style.borderColor = '#00ff99';
     contactFileBtn.style.backgroundColor = 'transparent';
+
+    // Hide attachment instruction
+    attachmentInstruction.style.display = 'none';
 }
 });
 
@@ -72,8 +79,8 @@
 }
 
     // Create mailto link
-    const mailtoLink = `mailto:shalukaofficial24@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
-    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}\n\n${contactFile.files.length > 0 ? `File Attached: ${contactFile.files[0].name}` : 'No file attached'}`
+    const mailtoLink = `mailto:shalu24vs@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}\n\n${contactFile.files.length > 0 ? `File Selected: ${contactFile.files[0].name} (Please attach manually in your email client)` : 'No file selected'}`
     )}`;
 
     // Try to open email client
@@ -88,6 +95,7 @@
     contactFileBtn.style.borderColor = '#00ff99';
     contactFileBtn.style.backgroundColor = 'transparent';
     contactMessage.style.height = '120px';
+    attachmentInstruction.style.display = 'none';
 }, 3000);
 
 } catch (error) {

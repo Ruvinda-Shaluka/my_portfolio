@@ -52,6 +52,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    margin-right:50px ;
 }
 
 @media (max-width: 900px) {
