@@ -51,8 +51,8 @@ html, body {
 .education-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    margin-right:50px ;
+    gap: 15px;
+    margin-right:60px ;
 }
 
 @media (max-width: 900px) {
