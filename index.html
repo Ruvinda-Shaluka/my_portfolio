@@ -20,41 +20,9 @@
 <body>
 <div class="code-bg" id="code-bg"></div>
 
-<!-- ===== SIDE NAVIGATION ===== -->
-<div class="nav-icons-fixed">
-    <a href="#hero" class="nav-icon" data-label="Home">
-        <img src="../my_portfolio/assets/icons/homeBtn.png" alt="Home">
-    </a>
-    <a href="#about" class="nav-icon" data-label="Who am I?">
-        <img src="../my_portfolio/assets/icons/aboutBtn.png" alt="About">
-    </a>
-    <a href="#work-section" class="nav-icon" data-label="Works">
-        <img src="../my_portfolio/assets/icons/workBtn.png" alt="Works">
-    </a>
-    <a href="#education" class="nav-icon" data-label="Education">
-        <img src="../my_portfolio/assets/icons/educationBtn.png" alt="Education">
-    </a>
-    <a href="#services" class="nav-icon" data-label="Services & Skills">
-        <img src="../my_portfolio/assets/icons/skillsBtn.png" alt="Skills">
-    </a>
-    <!--
-    <a href="#certificates" class="nav-icon" data-label="Certificates">
-        <img src="../my_portfolio/assets/icons/certificateBtn.png" alt="Certificates">
-    </a>-->
-    <!--
-    <a href="#services" class="nav-icon" data-label="Services">
-        <img src="../my_portfolio/assets/icons/servicesBtn.png" alt="Services">
-    </a>-->
-    <a href="#gallery" class="nav-icon" data-label="Gallery">
-        <img src="../my_portfolio/assets/icons/galleryBtn.png" alt="Gallery">
-    </a>
-    <a href="#contact" class="nav-icon" data-label="Contact">
-        <img src="../my_portfolio/assets/icons/contactBtn.png" alt="Contact">
-    </a>
-</div>
 
 <!-- ===== HERO SECTION ===== -->
-<section id="hero" class="section hero">
+<section id="hero" class="section-hero">
     <div class="hero-container">
         <div class="main-text" id="mainText">Hello World!..<span class="cursor"></span></div>
         <div class="sub-text" id="subText">- byteWithRuvinda -</div>
@@ -76,6 +44,64 @@
         </div>
     </div>
 </section>
+
+<!-- ===== SIDE NAVIGATION ===== -->
+<div class="nav-icons-fixed">
+    <a href="#hero" class="nav-icon" data-label="Home">
+        <img src="../my_portfolio/assets/icons/homeBtn.png" alt="Home">
+    </a>
+    <a href="#about" class="nav-icon" data-label="Who am I?">
+        <img src="../my_portfolio/assets/icons/aboutBtn.png" alt="About">
+    </a>
+    <a href="#work-section" class="nav-icon" data-label="Works">
+        <img src="../my_portfolio/assets/icons/workBtn.png" alt="Works">
+    </a>
+    <a href="#education" class="nav-icon" data-label="Education">
+        <img src="../my_portfolio/assets/icons/educationBtn.png" alt="Education">
+    </a>
+    <a href="#services" class="nav-icon" data-label="Services & Skills">
+        <img src="../my_portfolio/assets/icons/skillsBtn.png" alt="Skills">
+    </a>
+    <a href="#gallery" class="nav-icon" data-label="Gallery">
+        <img src="../my_portfolio/assets/icons/galleryBtn.png" alt="Gallery">
+    </a>
+    <a href="#contact" class="nav-icon" data-label="Contact">
+        <img src="../my_portfolio/assets/icons/contactBtn.png" alt="Contact">
+    </a>
+</div>
+
+<!-- ===== HAMBURGER MENU (only visible on mobile) ===== -->
+<div class="hamburger-menu" id="hamburgerMenu">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+===== MOBILE NAVIGATION =====
+<div class="mobile-nav" id="mobileNav">
+    <a href="#hero" class="nav-icon" data-label="Home">
+        <img src="../my_portfolio/assets/icons/homeBtn.png" alt="Home">
+    </a>
+    <a href="#about" class="nav-icon" data-label="Who am I?">
+        <img src="../my_portfolio/assets/icons/aboutBtn.png" alt="About">
+    </a>
+    <a href="#work-section" class="nav-icon" data-label="Works">
+        <img src="../my_portfolio/assets/icons/workBtn.png" alt="Works">
+    </a>
+    <a href="#education" class="nav-icon" data-label="Education">
+        <img src="../my_portfolio/assets/icons/educationBtn.png" alt="Education">
+    </a>
+    <a href="#services" class="nav-icon" data-label="Services & Skills">
+        <img src="../my_portfolio/assets/icons/skillsBtn.png" alt="Skills">
+    </a>
+    <a href="#gallery" class="nav-icon" data-label="Gallery">
+        <img src="../my_portfolio/assets/icons/galleryBtn.png" alt="Gallery">
+    </a>
+    <a href="#contact" class="nav-icon" data-label="Contact">
+        <img src="../my_portfolio/assets/icons/contactBtn.png" alt="Contact">
+    </a>
+</div>
 
 <!-- ===== ABOUT ===== -->
 <section id="about" class="section">
@@ -777,14 +803,14 @@
                 <span>FRAME 10</span>
                 <img src="../my_portfolio/assets/images/image__10.jpg" alt="image 10" class="gallery-image">
             </p>
-<!--            <p class="gallery-card-item">
-                <span>PROJECT 11</span>
-                <img src="../my_portfolio/assets/images/image_1.jpg" alt="image 11" class="gallery-image">
-            </p>
-            <p class="gallery-card-item">
-                <span>PROJECT 12</span>
-                <img src="../my_portfolio/assets/images/image_1.jpg" alt="image 12" class="gallery-image">
-            </p>-->
+            <!--            <p class="gallery-card-item">
+                            <span>PROJECT 11</span>
+                            <img src="../my_portfolio/assets/images/image_1.jpg" alt="image 11" class="gallery-image">
+                        </p>
+                        <p class="gallery-card-item">
+                            <span>PROJECT 12</span>
+                            <img src="../my_portfolio/assets/images/image_1.jpg" alt="image 12" class="gallery-image">
+                        </p>-->
         </div>
     </div>
 </section>
@@ -869,5 +895,6 @@
 <script src="../my_portfolio/js/education-section.js"></script>
 <script src="../my_portfolio/js/contact-section.js"></script>
 <script src="../my_portfolio/js/service-section.js"></script>
+<script src="../my_portfolio/js/navigation.js"></script>
 </body>
 </html>

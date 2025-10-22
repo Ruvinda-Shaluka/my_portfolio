@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruvinda Shaluka | Portfolio</title>
+    <link rel="stylesheet" href="../my_portfolio/assets/lib/normalize.css">
+    <link rel="stylesheet" href="../my_portfolio/css/style.css">
+    <link rel="stylesheet" href="../my_portfolio/css/footer.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/nav-bar.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/section-titles.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/contact-section.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/about-section.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/hero-section.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/works-section.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/education-section.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/service-section.css"/>
+    <link rel="stylesheet" href="../my_portfolio/css/gallery-section.css"/>
+</head>
+<body>
+<div class="code-bg" id="code-bg"></div>
+
+
+<!-- ===== HERO SECTION ===== -->
+<section id="hero" class="section-hero">
+    <div class="hero-container">
+        <div class="main-text" id="mainText">Hello World!..<span class="cursor"></span></div>
+        <div class="sub-text" id="subText">- byteWithRuvinda -</div>
+        <div class="tagline-container">
+            <div class="tagline" id="tagline">“I craft digital experiences that make life simpler.”</div>
+            <div class="author" id="author">— Ruvinda Shaluka Perera, Software Engineer</div>
+        </div>
+
+        <div class="buttons" id="buttons">
+            <a href="#about" class="button">
+                <button class="btn">About Me</button>
+            </a>
+            <a href="#work-section" class="button">
+                <button class="btn">Projects</button>
+            </a>
+            <a href="#contact" class="button">
+                <button class="btn">Download CV</button>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ===== SIDE NAVIGATION ===== -->
+<div class="nav-icons-fixed">
+    <a href="#hero" class="nav-icon" data-label="Home">
+        <img src="../my_portfolio/assets/icons/homeBtn.png" alt="Home">
+    </a>
+    <a href="#about" class="nav-icon" data-label="Who am I?">
+        <img src="../my_portfolio/assets/icons/aboutBtn.png" alt="About">
+    </a>
+    <a href="#work-section" class="nav-icon" data-label="Works">
+        <img src="../my_portfolio/assets/icons/workBtn.png" alt="Works">
+    </a>
+    <a href="#education" class="nav-icon" data-label="Education">
+        <img src="../my_portfolio/assets/icons/educationBtn.png" alt="Education">
+    </a>
+    <a href="#services" class="nav-icon" data-label="Services & Skills">
+        <img src="../my_portfolio/assets/icons/skillsBtn.png" alt="Skills">
+    </a>
+    <a href="#gallery" class="nav-icon" data-label="Gallery">
+        <img src="../my_portfolio/assets/icons/galleryBtn.png" alt="Gallery">
+    </a>
+    <a href="#contact" class="nav-icon" data-label="Contact">
+        <img src="../my_portfolio/assets/icons/contactBtn.png" alt="Contact">
+    </a>
+</div>
+
+<!-- ===== HAMBURGER MENU (only visible on mobile) ===== -->
+<div class="hamburger-menu" id="hamburgerMenu">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+ ===== MOBILE NAVIGATION =====
+<div class="mobile-nav" id="mobileNav">
+    <a href="#hero" class="nav-icon" data-label="Home">
+        <img src="../my_portfolio/assets/icons/homeBtn.png" alt="Home">
+    </a>
+    <a href="#about" class="nav-icon" data-label="Who am I?">
+        <img src="../my_portfolio/assets/icons/aboutBtn.png" alt="About">
+    </a>
+    <a href="#work-section" class="nav-icon" data-label="Works">
+        <img src="../my_portfolio/assets/icons/workBtn.png" alt="Works">
+    </a>
+    <a href="#education" class="nav-icon" data-label="Education">
+        <img src="../my_portfolio/assets/icons/educationBtn.png" alt="Education">
+    </a>
+    <a href="#services" class="nav-icon" data-label="Services & Skills">
+        <img src="../my_portfolio/assets/icons/skillsBtn.png" alt="Skills">
+    </a>
+    <a href="#gallery" class="nav-icon" data-label="Gallery">
+        <img src="../my_portfolio/assets/icons/galleryBtn.png" alt="Gallery">
+    </a>
+    <a href="#contact" class="nav-icon" data-label="Contact">
+        <img src="../my_portfolio/assets/icons/contactBtn.png" alt="Contact">
+    </a>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="section">
+    <h2 class="section-title" id="aboutH2">Who am I?</h2>
+    <div class="about-section">
+        <div class="about-container">
+            <!-- Left Column - GitHub Profile Card (1 part) -->
+            <div class="about-left-column">
+                <div class="about-git-glitch-profile-wrapper">
+                    <div class="about-git-glitch-card about-git-profile-card">
+                        <div class="about-git-card-header-visual"></div>
+                        <div class="about-git-profile-avatar">
+                            <svg
+                                    class="about-git-octocat-svg"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 16 16"
+                            >
+                                <path
+                                        fill-rule="evenodd"
+                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                                ></path>
+                            </svg>
+                        </div>
+                        <div class="about-git-card-body about-git-profile-body">
+                            <div class="about-git-profile-info">
+                                <div class="about-git-profile-name" data-text="Ruvinda_24">Ruvinda Shaluka</div>
+                                <p class="about-git-profile-title">FULLSTACK DEVELOPER</p>
+                            </div>
+                            <div class="about-git-profile-stats">
+                                <div class="about-git-stat-item">
+                                    <span class="about-git-stat-label">REPOSITORIES</span>
+                                    <span class="about-git-stat-value" data-text="9">9</span>
+                                </div>
+                                <div class="about-git-stat-item">
+                                    <span class="about-git-stat-label">FOLLOWERS</span>
+                                    <span class="about-git-stat-value" data-text="0">0</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/Ruvinda-Shaluka" class="about-git-submit-btn" data-text="VIEW_ON_GITHUB">
+                                <span class="about-git-btn-text">VIEW_ON_GITHUB</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column - Existing About Card (3 parts) -->
+            <div class="about-right-column">
+                <div class="about-card">
+                    <div class="about-card-inner">
+                        <div class="about-card-front">
+                            <div class="about-image">
+                                <img src="../my_portfolio/assets/images/image__3.jpg" alt="Profile Picture" class="profile-pic">
+                            </div>
+                            <div class="about-text">
+                                <p class="about-desc">
+                                    A curious mind who codes with purpose.<br>
+                                    I craft digital experiences that<br>
+                                    blend logic and creativity — one line of code at a time.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-card-back">
+                            <div class="about-left">
+                                <div class="container">
+                                    <header class="terminal-header">
+                                        <div class="dots">
+                                            <span class="red"></span>
+                                            <span class="yellow"></span>
+                                            <span class="green"></span>
+                                        </div>
+                                    </header>
+                                    <div class="tabs">
+                                        <button class="tab-btn active" data-lang="java">Java</button>
+                                        <button class="tab-btn" data-lang="python">Python</button>
+                                        <button class="tab-btn" data-lang="js">JavaScript</button>
+                                    </div>
+                                    <pre class="code-output" id="code-output"></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ======== Works ========== -->
+<section class="work-section" id="work-section">
+    <div class="work-container">
+        <!-- LEFT COLUMN -->
+        <div class="work-info">
+            <div class="work-text">
+                <h1 class="section-title">My Works</h1>
+                <h2 class="work-subtitle">@Ruvinda Shaluka Perera</h2>
+                <p>
+                    Welcome to my portfolio! Scroll the right column — each scroll shows one full
+                    project at a time, Just clicking the button you will be able to see the magic of few code line.
+                </p>
+            </div>
+        </div>
+
+        <!-- RIGHT COLUMN -->
+        <div class="work-cards-container">
+            <!-- CARD 1 -->
+            <div class="project-card">
+                <img
+                        class="project-card-img"
+                        src="../my_portfolio/assets/images/Gemini_Generated_Image_wyeuobwyeuobwyeu.png"
+                        alt="Project 1 Image"
+                />
+                <div class="project-card-content">
+                    <p class="project-card-title">Desktop Application</p>
+                    <p class="project-card-description">
+                        A Fully Developed Order & Workload Management System For Dream Baby Care Products With Java BackEnd.
+                    </p>
+
+                    <div class="project-card-buttons">
+                        <div
+                                class="button-icon"
+                                onclick="window.open('https://github.com/Ruvinda-Shaluka/DreamBabyCareLayeredProject.git', '_blank')"
+                                role="button"
+                                tabindex="0"
+                        >
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                            fill="#222229"
+                                            d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div class="cube">
+                                <span class="side front">get source code</span>
+                                <span class="side top">on github</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div class="project-card">
+                <img
+                        class="project-card-img"
+                        src="../my_portfolio/assets/images/Gemini_Generated_Image_xt6ixxt6ixxt6ixx.png"
+                        alt="Project 2 Image"
+                />
+                <div class="project-card-content">
+                    <p class="project-card-title">Desktop Application(ORM)</p>
+                    <p class="project-card-description">
+                        A Desktop Application For Student Registration In Elite Driving School, Fully Functioning With Hibernate ORM Principles And Java BackEnd.
+                    </p>
+                    <div class="project-card-buttons">
+                        <div
+                                class="button-icon"
+                                onclick="window.open('https://github.com/Ruvinda-Shaluka/elite-driving-school-system.git', '_blank')"
+                                role="button"
+                                tabindex="0"
+                        >
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill="#222229" d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"></path>
+                                </svg>
+                            </div>
+                            <div class="cube">
+                                <span class="side front">get source code</span>
+                                <span class="side top">on github</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div class="project-card">
+                <img
+                        class="project-card-img"
+                        src="../my_portfolio/assets/images/Gemini_Generated_Image_gc67l1gc67l1gc67.png"
+                        alt="Project 3 Image"
+                />
+                <div class="project-card-content">
+                    <p class="project-card-title">Desktop Application</p>
+                    <p class="project-card-description">
+                        Java backend Fully Functional Booking System For MemoClip Photography.
+                    </p>
+                    <div class="project-card-buttons">
+                        <div
+                                class="button-icon"
+                                onclick="window.open('https://github.com/Ruvinda-Shaluka/MemoClipsLayered.git', '_blank')"
+                                role="button"
+                                tabindex="0"
+                        >
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill="#222229" d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"></path>
+                                </svg>
+                            </div>
+                            <div class="cube">
+                                <span class="side front">get source code</span>
+                                <span class="side top">on github</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 4 -->
+            <div class="project-card">
+                <img
+                        class="project-card-img"
+                        src="../my_portfolio/assets/images/Gemini_Generated_Image_vgs9qmvgs9qmvgs9.png"
+                        alt="Project 4 Image"
+                />
+                <div class="project-card-content">
+                    <p class="project-card-title">Web Portfolio</p>
+                    <p class="project-card-description">
+                        Designed for Myself, Smooth Animations and Coding Style UI.
+                    </p>
+                    <div class="project-card-buttons">
+                        <div
+                                class="button-icon"
+                                onclick="window.open('https://github.com/Ruvinda-Shaluka/my_portfolio.git', '_blank')"
+                                role="button"
+                                tabindex="0"
+                        >
+                            <div class="icon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill="#222229" d="M12 0.296997C5.37 0.296997 0 5.67 0 12.297C0 17.6 3.438 22.097 8.205 23.682C8.805 23.795 9.025 23.424 9.025 23.105C9.025 22.82 9.015 22.065 9.01 21.065C5.672 21.789 4.968 19.455 4.968 19.455C4.422 18.07 3.633 17.7 3.633 17.7C2.546 16.956 3.717 16.971 3.717 16.971C4.922 17.055 5.555 18.207 5.555 18.207C6.625 20.042 8.364 19.512 9.05 19.205C9.158 18.429 9.467 17.9 9.81 17.6C7.145 17.3 4.344 16.268 4.344 11.67C4.344 10.36 4.809 9.29 5.579 8.45C5.444 8.147 5.039 6.927 5.684 5.274C5.684 5.274 6.689 4.952 8.984 6.504C9.944 6.237 10.964 6.105 11.984 6.099C13.004 6.105 14.024 6.237 14.984 6.504C17.264 4.952 18.269 5.274 18.269 5.274C18.914 6.927 18.509 8.147 18.389 8.45C19.154 9.29 19.619 10.36 19.619 11.67C19.619 16.28 16.814 17.295 14.144 17.59C14.564 17.95 14.954 18.686 14.954 19.81C14.954 21.416 14.939 22.706 14.939 23.096C14.939 23.411 15.149 23.786 15.764 23.666C20.565 22.092 24 17.592 24 12.297C24 5.67 18.627 0.296997 12 0.296997Z"></path>
+                                </svg>
+                            </div>
+                            <div class="cube">
+                                <span class="side front">get source code</span>
+                                <span class="side top">on github</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end cards -->
+        </div>
+    </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section id="education" class="education-section">
+    <h1 class="section-title">Education</h1>
+    <div class="education-container">
+        <div class="education-item">
+            <div class="education-degree-info">
+                <h3 class="education-degree-title">BSc in Software Engineering</h3>
+                <p class="education-institution">Institute of Software Engineering (IJSE)</p>
+                <p class="education-duration">2024 - 2027(Expected)</p>
+            </div>
+            <div class="education-degree-description">
+                <p>Currently pursuing a Bachelor's degree in Software Engineering with a focus on modern software development practices, algorithms, data structures, and system design.</p>
+                <p><strong>Key Courses:</strong> Object-Oriented Programming, Data Structures & Algorithms, Database Systems, Web Development, Software Engineering Principles</p>
+            </div>
+        </div>
+
+        <div class="education-item">
+            <h3 class="education-certificates-title">Certificates</h3>
+            <div class="education-certificates-container">
+                <div class="education-certificate-display" id="education-certificate-display">
+                    <div>
+                        <div class="education-certificate-card" id="education-certificate-card">
+                            Java
+                        </div>
+                        <h4 class="education-certificate-title" id="education-certificate-title">Java Programming Masterclass</h4>
+                        <p class="education-certificate-issuer" id="education-certificate-issuer">Issued by: Udemy</p>
+                        <p class="education-certificate-description" id="education-certificate-description">
+                            Comprehensive Java programming course covering fundamentals to advanced topics including OOP, data structures, multithreading, and JavaFX. Completed with hands-on projects and exercises.
+                        </p>
+                        <a href="https://www.hackerrank.com/certificates/a9c9767ef028" class="certificate-link" id="certificate-link" target="_blank">View Full Certificate</a>
+                    </div>
+                    <div>
+                        <div class="education-certificate-counter" id="education-certificate-counter">1 of 5</div>
+                        <div class="education-certificate-nav">
+                            <button class="education-nav-btn" id="education-prev-btn" disabled>
+                                <svg class="education-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                                </svg>
+                                Previous
+                            </button>
+                            <button class="education-nav-btn" id="education-next-btn">
+                                Next
+                                <svg class="education-icon" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certificate Preview Overlay -->
+<div class="certificate-preview-overlay" id="certificate-preview-overlay">
+    <div class="certificate-preview-container">
+        <button class="certificate-preview-close" id="certificate-preview-close">×</button>
+        <h3 class="certificate-preview-title" id="certificate-preview-title">Certificate Preview</h3>
+        <iframe class="certificate-preview-iframe" id="certificate-preview-iframe" src=""></iframe>
+    </div>
+</div>
+
+<!--
+
+ ===== SKILLS =====
+<section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+    </ul>
+</section>
+
+&lt;!&ndash; ===== CERTIFICATES ===== &ndash;&gt;
+<section id="certificates" class="section">
+    <h2 class="section-title">Certificates</h2>
+    <div class="cert-gallery">
+        <img src="../my_portfolio/assets/certificates/cert1.jpg" alt="Certificate 1">
+    </div>
+</section>
+-->
+
+<!-- ===== SERVICES ===== -->
+<section id="services" class="service-section">
+    <h2 class="section-title">Services</h2>
+    <div class="services-container">
+        <!-- Left Column - Services Cards -->
+        <div class="services-left">
+            <div class="service-gallery">
+                <div class="service-slider">
+                    <div class="service-wrapper">
+                        <div class="service-slide" data-service="1">
+                            <div class="service-card">
+                                <label for="service-flipper-1">
+                                    <div class="service-card-inner">
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-side service-front">
+                                            <span class="service-h1">Stand Alone Applications</span>
+                                            <p>
+                                                Development of desktop applications using Java, Python, and modern frameworks. Custom solutions tailored to your business needs.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">💻</div>
+                                        </div>
+                                        <div class="service-side service-back">
+                                            <span class="service-h1">Desktop Solutions</span>
+                                            <p>
+                                                Robust architecture, seamless performance, and scalable desktop applications built with cutting-edge technologies for optimal user experience.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">🚀</div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="service-flipper-1" />
+                            </div>
+                        </div>
+                        <div class="service-slide" data-service="2">
+                            <div class="service-card">
+                                <label for="service-flipper-2">
+                                    <div class="service-card-inner">
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-side service-front">
+                                            <span class="service-h1">Web Development</span>
+                                            <p>
+                                                Full-stack web development with modern technologies. Responsive designs, REST APIs, and deployment solutions.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">🌐</div>
+                                        </div>
+                                        <div class="service-side service-back">
+                                            <span class="service-h1">Full Stack</span>
+                                            <p>
+                                                Complete web solutions from frontend to backend. Database integration, API development, and cloud deployment for optimal performance.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">⚡</div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="service-flipper-2" />
+                            </div>
+                        </div>
+                        <div class="service-slide" data-service="3">
+                            <div class="service-card">
+                                <label for="service-flipper-3">
+                                    <div class="service-card-inner">
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-grid-tile"></div>
+                                        <div class="service-side service-front">
+                                            <span class="service-h1">UI/UX Design</span>
+                                            <p>
+                                                User-centered design approach creating intuitive interfaces. Wireframing, prototyping, and visual design.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">🎨</div>
+                                        </div>
+                                        <div class="service-side service-back">
+                                            <span class="service-h1">User Experience</span>
+                                            <p>
+                                                Creating engaging digital experiences through research, testing, and iterative design. Focus on usability and aesthetic appeal.
+                                            </p>
+                                            <span>Click to Flip</span>
+                                            <div class="service-side-badge"></div>
+                                            <div class="service-side-icon">✨</div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <input type="checkbox" id="service-flipper-3" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column - Skills Cards -->
+        <div class="skills-right">
+            <div class="skill-gallery">
+                <div class="skill-grid-container">
+                    <div class="skill-grid">
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java" class="skill-image">
+                                    <div class="skill-name">Java</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="skill-image">
+                                    <div class="skill-name">Python</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="skill-image">
+                                    <div class="skill-name">JavaScript</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL" class="skill-image">
+                                    <div class="skill-name">MySQL</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" class="skill-image">
+                                    <div class="skill-name">HTML</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="skill-image">
+                                    <div class="skill-name">CSS</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="skill-image">
+                                    <div class="skill-name">Figma</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://hibernate.org/images/hibernate-logo.svg" alt="Hibernate" class="skill-image">
+                                    <div class="skill-name">Hibernate</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-wrap">
+                            <div class="skill-card">
+                                <div class="skill-content">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" class="skill-image">
+                                    <div class="skill-name">Git</div>
+                                </div>
+                                <div class="skill-mask-wrap">
+                                    <div class="skill-mask skill-mask-left"></div>
+                                    <div class="skill-mask skill-mask-right"></div>
+                                </div>
+                                <div class="skill-loading-wrap">
+                                    <div class="skill-ball skill-ball1"></div>
+                                    <div class="skill-ball skill-ball2"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery" class="section">
+    <div class="gallery-section">
+        <h2 class="gallery-section-title">G<br>A<br>L<br>L<br>E<br>R<br>Y</h2>
+        <div class="gallery-card">
+            <p class="gallery-card-item">
+                <span>FRAME 1</span>
+                <img src="../my_portfolio/assets/images/image__1.jpg" alt="image 1" class="gallery-image">
+            </p>
+            <p class="gallery-card-item">
+                <span>FRAME 2</span>
+                <img src="../my_portfolio/assets/images/image__2.jpg" alt="image 2" class="gallery-image">
+            </p>
+            <p class="gallery-card-item">
+                <span>FRAME 3</span>
+                <img src="../my_portfolio/assets/images/image__3.jpg" alt="image 3" class="gallery-image">
+            </p>
+            <p class="gallery-card-item">
+                <span>FRAME 4</span>
+                <img src="../my_portfolio/assets/images/image__4.jpg" alt="image 4" class="gallery-image">
+            </p>
+            <p class="gallery-card-item">
+                <span>FRAME 5</span>
+                <img src="../my_portfolio/assets/images/image__5.jpg" alt="image 5" class="gallery-image">
+            </p>
+            <p class="gallery-card-item">
+                <span>FRAME 6</span>
+                <img src="../my_portfolio/assets/images/image__6.jpg" alt="image 6" class="gallery-image">
+            </p>
+            <p class="gallery-card-item">
+                <span>FRAME 7</span>
+                <img src="../my_portfolio/assets/images/image__7.jpg" alt="image 7" class="gallery-image">
+            </p>
+            <p class="gallery-card-item">
+                <span>FRAME 8</span>
+                <img src="../my_portfolio/assets/images/image__8.jpg" alt="image 8" class="gallery-image">
+            </p>
+            <p class="gallery-card-item">
+                <span>FRAME 9</span>
+                <img src="../my_portfolio/assets/images/image__9.jpg" alt="image 9" class="gallery-image">
+            </p>
+            <p class="gallery-card-item">
+                <span>FRAME 10</span>
+                <img src="../my_portfolio/assets/images/image__10.jpg" alt="image 10" class="gallery-image">
+            </p>
+            <!--            <p class="gallery-card-item">
+                            <span>PROJECT 11</span>
+                            <img src="../my_portfolio/assets/images/image_1.jpg" alt="image 11" class="gallery-image">
+                        </p>
+                        <p class="gallery-card-item">
+                            <span>PROJECT 12</span>
+                            <img src="../my_portfolio/assets/images/image_1.jpg" alt="image 12" class="gallery-image">
+                        </p>-->
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="section-contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="contact-section">
+        <div class="contact-wrapper">
+
+            <div class="contact-freelance-message">
+                <br>
+                Available for select freelance opportunities<br><br>
+                Have an exciting project you need help with?<br>
+                Email me or contact me via instant message!<br><br>
+                Let's create something amazing together.<br>
+                I specialize in modern web solutions and<br>
+                innovative digital experiences.
+            </div>
+
+            <div class="contact-form-container">
+                <form class="contact-form" id="contact-form">
+                    <label for="contact-name">Name</label><input type="text" name="name" placeholder="Your Name" required class="contact-input" id="contact-name">
+                    <label for="contact-email">Email</label><input type="email" name="email" placeholder="Your Email" required class="contact-input" id="contact-email">
+                    <label for="contact-message">Message</label><textarea name="message" placeholder="Your Message" required class="contact-textarea" id="contact-message"></textarea>
+
+                    <div class="contact-file-section">
+                        <label for="contact-file" class="contact-file-btn">
+                            <svg class="contact-file-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14,2 14,8 20,8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                                <polyline points="10,9 9,9 8,9"/>
+                            </svg>
+                            Attach Document
+                        </label>
+                        <input type="file" id="contact-file" class="contact-file-input">
+                        <div class="contact-file-name" id="contact-file-name">No file selected</div>
+                    </div>
+
+                    <button type="submit" class="contact-submit-btn">Send Email</button>
+
+                    <div class="attachment-instruction" id="attachment-instruction">
+                        Note: After your email client opens, please manually attach the file before sending.
+                    </div>
+
+                    <div class="contact-message contact-success" id="contact-success-message">
+                        ✓ Message prepared! Your email client should open automatically.
+                    </div>
+                    <div class="contact-message contact-error" id="contact-error-message">
+                        ✗ Error preparing email. Please try again.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="social-icons">
+        <a href="https://wa.me/94769063040?text=Hello%20I%20visited%20your%20website!" target="_blank">
+            <img src="../my_portfolio/assets/icons/whatsapp%20(1).png" alt="Whatsapp">
+        </a>
+        <a href="https://github.com/Ruvinda-Shaluka" target="_blank">
+            <img src="../my_portfolio/assets/icons/github.png" alt="GitHub">
+        </a>
+        <a href="https://www.linkedin.com/in/ruvinda-shaluka-perera-564207325/" target="_blank">
+            <img src="../my_portfolio/assets/icons/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/mr.shalu_ka/?next=%2F" target="_blank">
+            <img src="../my_portfolio/assets/icons/instagram.png" alt="Instagram">
+        </a>
+    </div>
+
+    <p>© 2025 Ruvinda Shaluka | All rights reserved</p>
+</footer>
+
+<script src="../my_portfolio/js/background-lines.js"></script>
+<script src="../my_portfolio/js/hero-section.js"></script>
+<script src="../my_portfolio/js/education-section.js"></script>
+<script src="../my_portfolio/js/contact-section.js"></script>
+<script src="../my_portfolio/js/service-section.js"></script>
+<script src="../my_portfolio/js/navigation.js"></script>
+</body>
+</html>

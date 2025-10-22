@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .gallery-section {
     display: grid;
     grid-template-columns: 1fr 4fr; /* 1:4 ratio */
@@ -8,7 +21,7 @@
     background-color: rgba(18, 18, 18, 0.5);
     padding: 2rem 1rem;
     align-items: center;
-    margin-bottom: -30px;
+    /*margin-bottom: -30px;*/
 }
 
 .gallery-section-title {
@@ -42,7 +55,7 @@
 
 .gallery-card {
     width: 1000px;
-    height: 700px;
+    height: 650px;
     border-radius: 4px;
     background: #212121;
     display: flex;
