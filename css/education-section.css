@@ -58,16 +58,19 @@ html, body {
 @media (max-width: 900px) {
     .education-container {
         grid-template-columns: 1fr;
+        margin-right: 0;
+        gap: 20px;
     }
 }
 
 .education-item {
     background: #1e1e1e;
     border-radius: 15px;
-    padding: 30px;
+    padding: 25px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border: 1px solid #333;
+    height: auto;
 }
 
 .education-item:hover {
@@ -138,7 +141,7 @@ html, body {
 
 .education-certificates-container {
     position: relative;
-    height: 500px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -150,7 +153,7 @@ html, body {
     padding: 25px;
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
     border-left: 4px solid #00FF5E;
-    height: 380px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

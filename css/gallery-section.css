@@ -11,6 +11,10 @@ html, body {
     overflow-x: hidden;
 }
 
+#frame-3{
+    color: aliceblue;
+}
+
 .gallery-section {
     display: grid;
     grid-template-columns: 1fr 4fr; /* 1:4 ratio */
