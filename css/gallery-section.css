@@ -204,7 +204,7 @@ html, body {
     .gallery-card .gallery-card-item .gallery-card-span {
         padding: 0.2em;
         text-align: center;
-        transform: rotate(-0deg);
+        transform: rotate(0deg);
         transition: transform 0.5s;
         text-transform: uppercase;
         color: aliceblue;
@@ -217,7 +217,7 @@ html, body {
     }
 
     .gallery-card .gallery-card-item:hover .gallery-card-span {
-        transform: rotate(0);
+        transform: rotate(-90deg);
     }
 
     .gallery-card .gallery-card-item::before {
