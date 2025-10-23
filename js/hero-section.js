@@ -5,24 +5,46 @@ const author = document.getElementById('author');
 const buttons = document.getElementById('buttons');
 const cursor = document.querySelector('.cursor');
 
-// Show "Hey Stranger"
+// Get all sonar card containers
+const sonarContainers = document.querySelectorAll('.sonar-container, .sonar-container-mobile');
+
+// First remove all the animation classes from HTML
+mainText.classList.remove('show');
+subText.classList.remove('slide-up');
+tagline.classList.remove('slide-up');
+author.classList.remove('slide-up');
+buttons.classList.remove('slide-up');
+
+// Hide all sonar containers initially
+sonarContainers.forEach(container => {
+    container.style.opacity = '0';
+    container.style.transition = 'opacity 1.5s ease';
+});
+
+// Show "Hello World!.."
 setTimeout(() => {
     mainText.classList.add('show');
 }, 500);
 
 // Then show "byteWithRuvinda"
 setTimeout(() => {
-    // cursor.style.display = 'none';
     subText.classList.add('slide-up');
 }, 2500);
 
-// Then show tagline
+// Then show tagline and author
 setTimeout(() => {
     tagline.classList.add('slide-up');
     author.classList.add('slide-up');
 }, 3800);
 
-// Finally, show buttons
+// Then show buttons
 setTimeout(() => {
     buttons.classList.add('slide-up');
 }, 5200);
+
+// Finally, show sonar containers
+setTimeout(() => {
+    sonarContainers.forEach(container => {
+        container.style.opacity = '1';
+    });
+}, 6500);
