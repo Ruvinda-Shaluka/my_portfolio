@@ -23,15 +23,27 @@
 
 <!-- ===== HERO SECTION ===== -->
 <section id="hero" class="section-hero">
+    <!-- Desktop Sonar container positioned in bottom left corner (only for laptops and higher) -->
+    <div class="sonar-container">
+        <div class="sonar-card">
+            <div class="sonar-circle"></div>
+            <div class="sonar-dot"></div>
+            <div class="sonar-dot2"></div>
+        </div>
+        <div class="sonar-data">
+            <p>34° 36' 30″ S; <br> 58° 22' 16″ O</p>
+        </div>
+    </div>
+
     <div class="hero-container">
-        <div class="main-text" id="mainText">Hello World!..<span class="cursor"></span></div>
-        <div class="sub-text" id="subText">- byteWithRuvinda -</div>
+        <div class="main-text show" id="mainText">Hello World!..<span class="cursor"></span></div>
+        <div class="sub-text slide-up" id="subText">- byteWithRuvinda -</div>
         <div class="tagline-container">
-            <div class="tagline" id="tagline">“I craft digital experiences that make life simpler.”</div>
-            <div class="author" id="author">— Ruvinda Shaluka Perera, Software Engineer</div>
+            <div class="tagline slide-up" id="tagline">"I craft digital experiences that make life simpler."</div>
+            <div class="author slide-up" id="author">— Ruvinda Shaluka Perera, Software Engineer</div>
         </div>
 
-        <div class="buttons" id="buttons">
+        <div class="buttons slide-up" id="buttons">
             <a href="#about" class="button">
                 <button class="btn">About Me</button>
             </a>
@@ -41,6 +53,18 @@
             <a href="#contact" class="button">
                 <button class="btn">Download CV</button>
             </a>
+        </div>
+
+        <!-- Sonar container for all devices except laptops and higher - appears below content -->
+        <div class="sonar-container-mobile">
+            <div class="sonar-card">
+                <div class="sonar-circle"></div>
+                <div class="sonar-dot"></div>
+                <div class="sonar-dot2"></div>
+            </div>
+            <div class="sonar-data">
+                <p>34° 36' 30″ S; <br> 58° 22' 16″ O</p>
+            </div>
         </div>
     </div>
 </section>
