@@ -217,7 +217,8 @@ html, body {
     }
 
     .gallery-card .gallery-card-item:hover .gallery-card-span {
-        transform: rotate(-90deg);
+        transform: rotate(-90deg
+        );
     }
 
     .gallery-card .gallery-card-item::before {
