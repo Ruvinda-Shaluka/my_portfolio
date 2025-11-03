@@ -578,11 +578,12 @@ html, body {
 /* Mobile Large (max width: 425px) */
 @media (max-width: 425px) {
     .about-section {
-        padding: 1rem 0.5rem;
+        padding: 1rem 2rem;
     }
 
     .about-container {
         gap: 15px;
+        margin-right: 0px;
     }
 
     .about-card {
