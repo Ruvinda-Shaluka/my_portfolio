@@ -559,165 +559,132 @@
 <section id="services" class="service-section">
     <h2 class="section-title">Services</h2>
     <div class="services-container">
-        <!-- Left Column - Services Cards -->
+        <!-- Left Column - VSCode Style Service Cards -->
         <div class="services-left">
-            <div class="service-gallery">
-                <div class="service-slider">
-                    <div class="service-wrapper">
-                        <div class="service-slide" data-service="1">
-                            <div class="service-card">
-                                <label for="service-flipper-1">
-                                    <div class="service-card-inner">
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-side service-front">
-                                            <span class="service-h1">Stand Alone Applications</span>
-                                            <p>
-                                                Development of desktop applications using Java, Python, and modern frameworks. Custom solutions tailored to your business needs.
-                                            </p>
-                                            <span>Click to Flip</span>
-                                            <div class="service-side-badge"></div>
-                                            <div class="service-side-icon">💻</div>
-                                        </div>
-                                        <div class="service-side service-back">
-                                            <span class="service-h1">Desktop Solutions</span>
-                                            <p>
-                                                Robust architecture, seamless performance, and scalable desktop applications built with cutting-edge technologies for optimal user experience.
-                                            </p>
-                                            <span>Click to Flip</span>
-                                            <div class="service-side-badge"></div>
-                                            <div class="service-side-icon">🚀</div>
-                                        </div>
-                                    </div>
-                                </label>
-                                <input type="checkbox" id="service-flipper-1" />
+            <div class="service-vscode-window">
+                <div class="service-title-bar">
+                    services-showcase.html
+                    <div class="service-window-controls">
+                        <div class="service-close"></div>
+                        <div class="service-minimize"></div>
+                        <div class="service-maximize"></div>
+                    </div>
+                </div>
+
+                <input class="service-input" type="radio" name="service-tab" id="service-tab-standalone" checked />
+                <input class="service-input" type="radio" name="service-tab" id="service-tab-webapp" />
+                <input class="service-input" type="radio" name="service-tab" id="service-tab-uiux" />
+
+                <div class="service-tabs">
+                    <label class="service-l" for="service-tab-standalone">Standalone Applications</label>
+                    <label class="service-l" for="service-tab-webapp">Web Applications</label>
+                    <label class="service-l" for="service-tab-uiux">UI/UX Designs</label>
+                </div>
+
+                <div class="service-code-panel">
+                    <div id="service-standalone-panel" class="service-panel">
+                        <div class="service-comment">// Standalone Applications</div>
+                        <br>
+                        <div class="service-service-title">Standalone Applications</div>
+                        <div class="service-service-description">
+                            <span class="service-keyword">Standalone applications</span> are software programs that run independently on a user's device without requiring a web browser or constant internet connection. These applications are installed directly on the operating system and leverage the full capabilities of the device.
+                        </div>
+
+                        <div class="service-comment">// Key Features</div>
+                        <ul class="service-features">
+                            <li><span class="service-attr">Offline functionality</span> - Operate without internet connection</li>
+                            <li><span class="service-attr">Native performance</span> - Direct access to system resources</li>
+                            <li><span class="service-attr">Enhanced security</span> - Reduced exposure to web-based threats</li>
+                            <li><span class="service-attr">System integration</span> - Seamless integration with OS features</li>
+                            <li><span class="service-attr">Rich user experience</span> - Advanced UI capabilities and responsiveness</li>
+                        </ul>
+
+                        <div class="service-comment">// Common Use Cases</div>
+                        <ul class="service-features">
+                            <li>Desktop productivity tools</li>
+                            <li>Media editing software</li>
+                            <li>Data analysis applications</li>
+                            <li>System utilities</li>
+                            <li>Enterprise resource planning systems</li>
+                        </ul>
+
+                        <div class="service-tech-stack">
+                            <h3>Technology Stack</h3>
+                            <div class="service-tech-list">
+                                <span class="service-tech-item">Java Swing</span>
+                                <span class="service-tech-item">JavaFX</span>
                             </div>
                         </div>
-                        <div class="service-slide" data-service="2">
-                            <div class="service-card">
-                                <label for="service-flipper-2">
-                                    <div class="service-card-inner">
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-side service-front">
-                                            <span class="service-h1">Web Development</span>
-                                            <p>
-                                                Full-stack web development with modern technologies. Responsive designs, REST APIs, and deployment solutions.
-                                            </p>
-                                            <span>Click to Flip</span>
-                                            <div class="service-side-badge"></div>
-                                            <div class="service-side-icon">🌐</div>
-                                        </div>
-                                        <div class="service-side service-back">
-                                            <span class="service-h1">Full Stack</span>
-                                            <p>
-                                                Complete web solutions from frontend to backend. Database integration, API development, and cloud deployment for optimal performance.
-                                            </p>
-                                            <span>Click to Flip</span>
-                                            <div class="service-side-badge"></div>
-                                            <div class="service-side-icon">⚡</div>
-                                        </div>
-                                    </div>
-                                </label>
-                                <input type="checkbox" id="service-flipper-2" />
+                    </div>
+
+                    <div id="service-webapp-panel" class="service-panel">
+                        <div class="service-comment">// Web Applications</div>
+                        <br>
+                        <div class="service-service-title">Web Applications</div>
+                        <div class="service-service-description">
+                            <span class="service-keyword">Web applications</span> are software programs that run in web browsers, accessible from any device with an internet connection. They eliminate the need for installation and provide cross-platform compatibility with centralized updates and maintenance.
+                        </div>
+
+                        <div class="service-comment">// Key Features</div>
+                        <ul class="service-features">
+                            <li><span class="service-attr">Cross-platform compatibility</span> - Accessible from any device with a browser</li>
+                            <li><span class="service-attr">No installation required</span> - Instant access via URL</li>
+                            <li><span class="service-attr">Centralized updates</span> - All users get the latest version automatically</li>
+                            <li><span class="service-attr">Scalability</span> - Easy to scale with cloud infrastructure</li>
+                            <li><span class="service-attr">Collaboration</span> - Real-time collaboration features</li>
+                        </ul>
+
+                        <div class="service-comment">// Common Use Cases</div>
+                        <ul class="service-features">
+                            <li>E-commerce platforms</li>
+                            <li>Content management systems</li>
+                            <li>Social media platforms</li>
+                            <li>Online banking</li>
+                            <li>Project management tools</li>
+                        </ul>
+
+                        <div class="service-tech-stack">
+                            <h3>Technology Stack</h3>
+                            <div class="service-tech-list">
+                                <span class="service-tech-item">HTML</span>
+                                <span class="service-tech-item">CSS</span>
+                                <span class="service-tech-item">JavaScript</span>
+                                <span class="service-tech-item">React</span>
                             </div>
                         </div>
-                        <div class="service-slide" data-service="3">
-                            <div class="service-card">
-                                <label for="service-flipper-3">
-                                    <div class="service-card-inner">
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-grid-tile"></div>
-                                        <div class="service-side service-front">
-                                            <span class="service-h1">UI/UX Design</span>
-                                            <p>
-                                                User-centered design approach creating intuitive interfaces. Wireframing, prototyping, and visual design.
-                                            </p>
-                                            <span>Click to Flip</span>
-                                            <div class="service-side-badge"></div>
-                                            <div class="service-side-icon">🎨</div>
-                                        </div>
-                                        <div class="service-side service-back">
-                                            <span class="service-h1">User Experience</span>
-                                            <p>
-                                                Creating engaging digital experiences through research, testing, and iterative design. Focus on usability and aesthetic appeal.
-                                            </p>
-                                            <span>Click to Flip</span>
-                                            <div class="service-side-badge"></div>
-                                            <div class="service-side-icon">✨</div>
-                                        </div>
-                                    </div>
-                                </label>
-                                <input type="checkbox" id="service-flipper-3" />
+                    </div>
+
+                    <div id="service-uiux-panel" class="service-panel">
+                        <div class="service-comment">// UI/UX Designs</div>
+                        <br>
+                        <div class="service-service-title">UI/UX Designs</div>
+                        <div class="service-service-description">
+                            <span class="service-keyword">UI/UX Design</span> focuses on creating intuitive, engaging, and user-friendly interfaces that enhance user satisfaction and interaction. UI (User Interface) deals with the visual elements, while UX (User Experience) focuses on the overall feel and usability of the product.
+                        </div>
+
+                        <div class="service-comment">// Key Features</div>
+                        <ul class="service-features">
+                            <li><span class="service-attr">User-centered design</span> - Focus on user needs and behaviors</li>
+                            <li><span class="service-attr">Intuitive navigation</span> - Easy-to-use interface layouts</li>
+                            <li><span class="service-attr">Visual consistency</span> - Cohesive design language and branding</li>
+                            <li><span class="service-attr">Accessibility</span> - Designs that work for all users</li>
+                            <li><span class="service-attr">Responsive design</span> - Optimal experience across all devices</li>
+                        </ul>
+
+                        <div class="service-comment">// Common Deliverables</div>
+                        <ul class="service-features">
+                            <li>Wireframes and prototypes</li>
+                            <li>User flow diagrams</li>
+                            <li>Style guides and design systems</li>
+                            <li>Interactive mockups</li>
+                            <li>Usability testing reports</li>
+                        </ul>
+
+                        <div class="service-tech-stack">
+                            <h3>Tools & Technologies</h3>
+                            <div class="service-tech-list">
+                                <span class="service-tech-item">Figma</span>
+                                <span class="service-tech-item">Draw.io</span>
                             </div>
                         </div>
                     </div>
@@ -725,7 +692,7 @@
             </div>
         </div>
 
-        <!-- Right Column - New Skills Cards -->
+        <!-- Right Column - Skills Cards (unchanged) -->
         <div class="skills-right">
             <div class="skill-gallery">
                 <div class="skill-grid-container">
