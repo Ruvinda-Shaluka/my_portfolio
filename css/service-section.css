@@ -43,6 +43,12 @@ html, body {
     align-items: center;
 }
 
+.services-left:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 255, 94, 0.1);
+    background: #2c2c3e;
+}
+
 /* VSCode Window Styles */
 .service-vscode-window {
     width: 100%;
