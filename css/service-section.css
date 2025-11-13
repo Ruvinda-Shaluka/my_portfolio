@@ -43,6 +43,10 @@ html, body {
     align-items: center;
 }
 
+.skills-right {
+    margin-right: 50px;
+}
+
 .services-left:hover{
     transform: translateY(-5px);
     box-shadow: 0 8px 10px rgba(0, 255, 94, 0.1);
